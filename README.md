@@ -25,26 +25,26 @@ Tests for all cases (`EventBusTest`).
 
 ## use cases
 Using `EventBus` is quite straightforward:  
-- Define event classes.
-- Define listener classes with methods for specific event classes:
-```
-@Subscribe
-private void general(Event event) {
+* Define event classes.
+* Define listener classes with methods for specific event classes:
+    ```
+    @Subscribe
+    private void general(Event event) {
 
-}
-```
-- Create `EventBus` and `register` appropriate listeners:
-```
-EventBus bus = new EventBus();
-ListenerOne one = new ListenerOne();
-bus.register(one);
-```
-- If we don't need already registered listener, we simply `unregister`
+    }
+    ```
+* Create `EventBus` and `register` appropriate listeners:
+    ```
+    EventBus bus = new EventBus();
+    ListenerOne one = new ListenerOne();
+    bus.register(one);
+    ```
+* If we don't need already registered listener, we simply `unregister`
 it:
-```
-EventBus bus = new EventBus();
-ListenerOne one = new ListenerOne();
-bus.register(one);
-...
-bus.unregister(one);
-```
+    ```
+    EventBus bus = new EventBus();
+    ListenerOne one = new ListenerOne();
+    bus.register(one);
+    ...
+    bus.unregister(one);
+    ```
