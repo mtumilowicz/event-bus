@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.com/mtumilowicz/event-bus.svg?branch=master)](https://travis-ci.com/mtumilowicz/event-bus)
 
 # event-bus
 The main goal of this project is to explore basic features of `EventBus` 
