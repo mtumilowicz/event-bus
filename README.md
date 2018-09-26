@@ -41,6 +41,10 @@ Using `EventBus` is quite straightforward:
     ListenerOne one = new ListenerOne();
     bus.register(one);
     ```
+* Publish events:
+    ```
+    bus.post(event);
+    ```
 * If we don't need already registered listener, we simply `unregister`
 it:
     ```
